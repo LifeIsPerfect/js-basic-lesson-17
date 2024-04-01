@@ -20,7 +20,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['jest'],
+  plugins: ['jest', '@stylistic/js'],
   rules: {
     'no-console': 'off',
     'no-alert': 'off',
