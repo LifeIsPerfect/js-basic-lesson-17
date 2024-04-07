@@ -8,19 +8,24 @@
     <title>Weather</title>
   </head>
   <body>
-    <textarea class="city-textbox">Weather</textarea>
-    <div class="map">*map here*</div>
-    <button class="show-weather-button">Show</button>
-    <div class="weather-info">Weather info</div>
-    <div class="history">
-        <div class="history-header">History</div>
-        <ul class="history-list">
+    <main class="main-section">
+      <div class="search">
+        <input type="search" class="search__form" placeholder="Укажите город" />
+      </div>
+      <button class="search-button">Show</button>
+      <div class="map">*map here*</div>
+      <div class="weather-info">*weather info here*</div>
+    </main>
+
+    <aside class="history">
+      <div class="history__title">History</div>
+      <ul class="history__list">
         <!-- Понятно, что далее такие элементы будут генерироваться JS-кодом. Сейчас сделал статично как в примере.-->
-        <li class="history-item">London</li>
-        <li class="history-item">Minsk</li>
-        <li class="history-item">Moscow</li>
-        </ul>
-    </div>
+        <li class="history__item">London</li>
+        <li class="history__item">Minsk</li>
+        <li class="history__item">Moscow</li>
+      </ul>
+    </aside>
     <script src="./weather.js"></script>
   </body>
 </html>
