@@ -10,7 +10,7 @@
     "lint:fix": "prettier --write . && eslint . --fix",
     "build": "webpack",
     "watch": "webpack --watch",
-    "dev": "webpack serve --open --mode=development"
+    "dev": "webpack serve --open --mode=development --allowed-hosts all"
   },
   "author": "Alexander Skripko",
   "license": "ISC",
