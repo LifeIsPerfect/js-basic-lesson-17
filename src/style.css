@@ -22,10 +22,6 @@ body {
   grid-column-gap: 20px;
   grid-row-gap: 5px;
   grid-auto-flow: row;
-
-  /*grid-template-areas:
-    "search search-button"
-    "map weather-info";*/
 }
 
 @media (min-width: 901px) {
