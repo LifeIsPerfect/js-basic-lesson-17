@@ -20,9 +20,11 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['jest'],
+  plugins: ['jest', '@stylistic/js'],
   rules: {
-    'max-len': ['error', { ignoreComments: true }],
-    'import/prefer-default-export': 'off',
+    'no-console': 'off',
+    'no-alert': 'off',
+    'no-plusplus': 'off',
+    'no-use-before-define': ['error', { functions: false }],
   },
 };

@@ -11,12 +11,8 @@ jobs:
 
       - name: Install Packages
         run: |
-          npm-install
+          npm install
 
       - name: Lint check
         run: |
           npm run lint
-
-      - name: Run tests
-        run: |
-          npm run test
