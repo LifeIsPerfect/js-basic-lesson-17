@@ -26,5 +26,7 @@ module.exports = {
     'no-alert': 'off',
     'no-plusplus': 'off',
     'no-use-before-define': ['error', { functions: false }],
+    'import/prefer-default-export': 'off',
+    'no-array-constructor': 'off',
   },
 };
