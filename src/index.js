@@ -25,17 +25,11 @@ async function mainLoop(searchString) {
 }
 
 async function buttonHandler() {
-  // Получить название города из текстбокса
-  // Добавить город в localstorage (если есть переполнение, убрать старый)
-  // f()
-  // Удалить текст в текстбоксе
-  // let a = document.getElementsByClassName("search-input")[0];
   const searchString = getSearchString();
   mainLoop(searchString);
   resetSearchString();
 }
 
-// updateHistoryDom();
 initHistoryBlock(mainLoop);
 
 document

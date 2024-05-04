@@ -1,7 +1,5 @@
 .map {
   grid-area: map;
-  border: 2px solid #2196f3;
-  background-color: #f7f7f7;
   text-align: center;
 }
 

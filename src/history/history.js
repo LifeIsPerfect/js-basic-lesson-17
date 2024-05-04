@@ -29,7 +29,6 @@ export async function initHistoryBlock(clickHistoryCallback) {
       clickHistoryCallback.bind(null, history[i]),
     );
     myNode.appendChild(newChild);
-    // newChild.outterHTML=`<li class='history__item'>${history[i]}</li>`
   }
 }
 

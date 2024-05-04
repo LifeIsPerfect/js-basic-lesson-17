@@ -2,20 +2,26 @@
   width: 100px;
   height: 100px;
   border: 2px solid #2196f3;
-  /*background-color: grey;*/
 }
 
 .weather {
   display: flex;
-  flex-direction: column;
 }
 
-.weather__temp {
+@media (max-width: 900px) {
+  .weather {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 901px) {
+  .weather {
+    flex-direction: column;
+  }
+}
+
+.weather__temperature {
   display: flex;
   flex-direction: row;
-}
-
-.weather-mock {
-  grid-area: weather-info;
-  border: 2px solid #2196f3;
+  align-items: center;
 }

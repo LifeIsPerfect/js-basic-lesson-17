@@ -27,7 +27,7 @@ export async function updateMapDom(coords) {
   while (myNode.firstChild) {
     myNode.removeChild(myNode.lastChild);
   }
-  /* document.getElementsByClassName("map")[0].childNodes[0].remove(); */
+
   const imgEl = document
     .getElementsByClassName('map')[0]
     .appendChild(document.createElement('img'));
