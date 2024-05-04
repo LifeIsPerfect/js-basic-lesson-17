@@ -1,0 +1,4 @@
+.search__button {
+  grid-area: search-button;
+  width: 160px;
+}

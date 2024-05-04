@@ -1,0 +1,10 @@
+.map {
+  grid-area: map;
+  text-align: center;
+}
+
+.map__inner {
+  width: 600px;
+  height: 450px;
+  background-color: grey;
+}

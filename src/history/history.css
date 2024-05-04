@@ -1,0 +1,18 @@
+.history {
+  flex-grow: 2;
+}
+
+.history__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: 900px) {
+  .history__title {
+    font-size: 24px;
+  }
+
+  .history__list {
+    font-size: 18px;
+  }
+}

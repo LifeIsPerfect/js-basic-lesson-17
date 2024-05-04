@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Weather</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=615fae63-0e13-4511-a439-117f2518ddce&lang=ru_RU"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <main class="main-section">
-      <div class="search">
-        <input type="search" class="search__form" placeholder="Укажите город" />
-      </div>
+      <input class="search-input" type="search" placeholder="Укажите город" />
       <button class="search-button">Show</button>
-      <div class="map">*map here*</div>
-      <div class="weather-info">*weather info here*</div>
+      <div class="map">
+        <div class="map__inner"></div>
+      </div>
+      <div class="weather">
+        <div class="weather__icon-wrapper">
+          <img class="weather__icon" />
+        </div>
+        <div class="weather__temperature">
+          <div class="weather__temp-title">Темпуратура:</div>
+          <div class="weather__temp-value">-</div>
+          <div class="weather__temp-celsius">°C</div>
+        </div>
+      </div>
     </main>
 
     <aside class="history">
       <div class="history__title">History</div>
-      <ul class="history__list">
-        <!-- Понятно, что далее такие элементы будут генерироваться JS-кодом. Сейчас сделал статично как в примере.-->
-        <li class="history__item">London</li>
-        <li class="history__item">Minsk</li>
-        <li class="history__item">Moscow</li>
-      </ul>
+      <ul class="history__list"></ul>
+      <button class="history__clear-button">Clear history</button>
     </aside>
   </body>
 </html>
