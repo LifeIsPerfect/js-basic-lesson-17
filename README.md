@@ -19,3 +19,5 @@ GitHub Pages: https://lifeisperfect.github.io/js-basic-lesson-17/
 Стркутура файлов в репозитории соответствует указанным выше БЭМ-блокам: JS- и CSS-код каждого БЭМ-блока располагается в отдельной поддиректории.
 
 Для хранения истории запросов используется localStorage.
+
+Актуальный статус прохождения линтера и тестов (пока отсутствуют) в master-ветке: [![PR Sanity Check](https://github.com/LifeIsPerfect/js-basic-lesson-17/actions/workflows/sanity-check.yml/badge.svg)](https://github.com/LifeIsPerfect/js-basic-lesson-17/actions/workflows/sanity-check.yml)
