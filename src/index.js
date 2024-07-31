@@ -5,7 +5,7 @@ import './search-button/search-button.css';
 import './search-input/search-input.css';
 import './weather/weather.css';
 import { updateWeatherDom } from './weather/weather';
-import { geoCode, updateMapDom } from './map/map';
+import { findLocation, updateMapDom } from './map/map';
 import {
   updateHistoryBlock,
   initHistoryBlock,
@@ -17,11 +17,11 @@ import {
 } from './search-input/search-input';
 
 async function mainLoop(searchString) {
-  const coords = await geoCode(searchString);
+  const location = await findLocation(searchString);
 
-  updateWeatherDom(coords);
-  updateMapDom(coords);
-  updateHistoryBlock(searchString, mainLoop);
+  updateWeatherDom(location.coords);
+  updateMapDom(location.coords);
+  updateHistoryBlock(location.name, mainLoop);
 }
 
 async function buttonHandler() {

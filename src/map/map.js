@@ -2,7 +2,7 @@
 // Используется geoCoder от yandex.
 // Используется первый результат в поиске, поэтому поведение при запросе "ул. Ленина" (которая есть в разных городах) не определено.
 // Результат - объект { lat, lon }
-export async function geoCode(place) {
+export async function findLocation(place) {
   const geocoderApiKey = '615fae63-0e13-4511-a439-117f2518ddce';
   const uri = encodeURI(
     `https://geocode-maps.yandex.ru/1.x/?apikey=${geocoderApiKey}&geocode=${place}&format=json`,
@@ -13,10 +13,14 @@ export async function geoCode(place) {
     res.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos.split(
       ' ',
     );
+  const {name} = res.response.GeoObjectCollection.featureMember[0].GeoObject;
 
   return {
-    lat,
-    lon,
+    name,
+    coords: {
+      lat,
+      lon,
+    },
   };
 }
 
