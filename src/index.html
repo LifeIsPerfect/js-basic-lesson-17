@@ -12,8 +12,10 @@
   </head>
   <body>
     <main class="main-section">
-      <input class="search-input" type="search" placeholder="Укажите город" />
-      <button class="search-button">Show</button>
+      <form id="search-string" onsubmit="return false;">
+        <input class="search-input" type="search" placeholder="Укажите город" />
+      </form>
+      <button class="search-button" form="search-string">Show</button>
       <div class="map">
         <div class="map__inner"></div>
       </div>
