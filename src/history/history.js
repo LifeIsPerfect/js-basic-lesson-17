@@ -5,11 +5,11 @@ export async function updateHistoryBlock(newElement, clickHistoryCallback) {
     history.splice(prevPosition, 1);
   }
 
-  history.push(newElement);
+  history.unshift(newElement);
 
   const maxHistorySize = 10;
   while (history.length > maxHistorySize) {
-    history.shift();
+    history.pop();
   }
 
   setHistory(JSON.stringify(history));
