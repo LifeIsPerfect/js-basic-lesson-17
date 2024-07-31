@@ -13,7 +13,7 @@ export async function findLocation(place) {
     res.response.GeoObjectCollection.featureMember[0].GeoObject.Point.pos.split(
       ' ',
     );
-  const {name} = res.response.GeoObjectCollection.featureMember[0].GeoObject;
+  const { name } = res.response.GeoObjectCollection.featureMember[0].GeoObject;
 
   return {
     name,
